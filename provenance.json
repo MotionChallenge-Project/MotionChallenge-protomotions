@@ -1,0 +1,12 @@
+{
+  "model": "protomotions",
+  "submitter": "Motion Challenge",
+  "submission_type": "maintainer reproduction, not author submission",
+  "upstream": "https://github.com/NVlabs/ProtoMotions",
+  "source_commit": "f69fdcaabff31846b4d2247207417b57dc788828",
+  "checkpoint_sha256": "a59baa3e04a951e5cf0b4cc68f24ebaafa9272714226618b99a5017dfc805b4c",
+  "author_inference_review": "pending",
+  "benchmark_physics": "shared G1 canonical profile, not the author training simulator",
+  "legacy_results": "not transferable to this adapter revision without rerunning",
+  "redistribution": "checkpoint not distributed in Git; obtain from recorded upstream URL under its original terms"
+}
