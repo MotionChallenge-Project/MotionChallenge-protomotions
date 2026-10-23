@@ -18,17 +18,18 @@ Results and traces are written outside Git. `--help` lists options.
 The root `motion-challenge` submodule owns data, physics, metrics and verification.
 This repository only adapts model inference; no `sim2real` dependency.
 
-**Development adapter — author-inference review pending.**
 [Provenance](provenance.json)
 
 MuJoCo 3.17 batch is the default. Use `--jobs 8` for parallel clips;
 download and evaluation progress updates every 5 seconds.
 
-Run all frames after tracking failure: `uv run evaluate.py --termination none`.
-This records full-motion errors under a separate protocol; success still requires no failure.
 
 ## Checkpoint source
 
 [NVlabs/ProtoMotions](https://github.com/NVlabs/ProtoMotions/blob/f69fdcaabff31846b4d2247207417b57dc788828/README.md) · [unified_pipeline.onnx](https://github.com/NVlabs/ProtoMotions/blob/f69fdcaabff31846b4d2247207417b57dc788828/data/pretrained_models/motion_tracker/g1-bones-deploy/compiled_models/unified_pipeline.onnx). Author-released checkpoint.
 
 The adapter pins this published artifact by SHA256. Artifact identity is separate from inference parity.
+
+One `uv run evaluate.py` produces one verified `result.json`: success, completion,
+three MPBPE alignments through first failure and the same three over the full motion.
+Both scopes use the same checkpoint and source revision; no branch switching is needed.
