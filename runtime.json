@@ -1,6 +1,6 @@
 {
   "id": "protomotions-g1-development-v1",
-  "entrypoint": "adapter:create",
+  "entrypoint": "restricted:create",
   "control_period_s": 0.02,
   "reference_offsets_s": [
     0.02,
@@ -19,12 +19,9 @@
   "source_repository": "https://github.com/NVlabs/ProtoMotions",
   "weights_url": "https://media.githubusercontent.com/media/NVlabs/ProtoMotions/f69fdcaabff31846b4d2247207417b57dc788828/data/pretrained_models/motion_tracker/g1-bones-deploy/compiled_models/unified_pipeline.onnx",
   "inference_config": "policy.yaml",
-  "default_track": "ideal-proprioception",
-  "observation_tracks": {
-    "ideal-proprioception": {
-      "entrypoint": "restricted:create",
-      "admission_record": "admission.json",
-      "admission_sha256": "17ecee339d9fe3bc7e19929da8f3f1c1309f9c1082d230b401b8891fc5506e42"
-    }
+  "state_access": "ideal-proprioceptive-no-position-v1",
+  "observation_contract": {
+    "admission_record": "admission.json",
+    "admission_sha256": "17ecee339d9fe3bc7e19929da8f3f1c1309f9c1082d230b401b8891fc5506e42"
   }
 }
