@@ -1,12 +1,12 @@
-# Motion Challenge · protomotions
+# MotionChallenge · protomotions
 
 [Author project](https://github.com/NVlabs/ProtoMotions) · [Checkpoint](https://github.com/NVlabs/ProtoMotions/blob/f69fdcaabff31846b4d2247207417b57dc788828/data/pretrained_models/motion_tracker/g1-bones-deploy/compiled_models/unified_pipeline.onnx) · [Provenance](provenance.json)
 
 ## Install and run
 
 ```bash
-git clone --recurse-submodules https://github.com/MotionChallenge-Project/motion-challenge-protomotions.git
-cd motion-challenge-protomotions
+git clone --recurse-submodules https://github.com/MotionChallenge-Project/MotionChallenge-protomotions.git
+cd MotionChallenge-protomotions
 uv sync
 uv run evaluate.py
 ```
