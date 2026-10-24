@@ -69,7 +69,7 @@ def main():
     start = next(i for i, n in enumerate(loop.body) if isinstance(n, ast.Assign) and any(isinstance(t, ast.Name) and t.id == 'pd_targets' for t in n.targets))
     end = next(i for i, n in enumerate(loop.body) if isinstance(n, ast.Assign) and any(isinstance(t, ast.Name) and t.id == 'prev_actions' for t in n.targets))
     postprocess = compile(ast.Module(loop.body[start:end + 1], []), str(runner), 'exec')
-    world = World(root / 'motion-challenge/robots/g1-29dof-cpu-v0.json')
+    world = World(root / 'MotionChallenge-Core/robots/g1-29dof-cpu-v0.json')
     anchor = world.model.body('torso_link').id - 1
     assert tuple(cfg['joint_names']) == world.joint_names
     rng = np.random.default_rng(241024)
