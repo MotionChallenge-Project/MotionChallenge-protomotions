@@ -1,5 +1,5 @@
 {
-  "id": "protomotions-g1-development-v1",
+  "id": "protomotions-g1-v1",
   "entrypoint": "restricted:create",
   "control_period_s": 0.02,
   "reference_offsets_s": [
@@ -22,6 +22,6 @@
   "state_access": "ideal-proprioceptive-no-position-v1",
   "observation_contract": {
     "admission_record": "admission.json",
-    "admission_sha256": "17ecee339d9fe3bc7e19929da8f3f1c1309f9c1082d230b401b8891fc5506e42"
+    "admission_sha256": "8119ff438ea4735876d7b8c0afba4930db24ad0d9001f21c769965830090e0f0"
   }
 }
