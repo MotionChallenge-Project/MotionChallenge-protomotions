@@ -21,3 +21,5 @@ outside Git.
 
 This repository adapts model inference. The pinned root `motion-challenge`
 submodule owns datasets, physics, metrics and verification. See `--help` for options.
+
+Author inference checks: [script](validate_inference.py), [source pins](native-sources.json), [report](validation/native-parity.json).

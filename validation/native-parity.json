@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "cases": 160,
+  "resets": 4,
+  "max_abs_error": {
+    "inputs": 0.0,
+    "outputs": 0.0,
+    "motor_target": 0.0,
+    "stiffness": 0.0,
+    "damping": 0.0,
+    "history": 0.0,
+    "reset_history": 0.0,
+    "endpoint_reference": 0.0
+  },
+  "limits": {
+    "inputs": 0.0002,
+    "outputs": 0.0002,
+    "motor_target": 0.0002,
+    "stiffness": 0.0,
+    "damping": 0.0,
+    "history": 0.0002,
+    "reset_history": 0.0,
+    "endpoint_reference": 0.0
+  },
+  "source_commit": "f69fdcaabff31846b4d2247207417b57dc788828",
+  "checkpoint_sha256": "a59baa3e04a951e5cf0b4cc68f24ebaafa9272714226618b99a5017dfc805b4c",
+  "scope": "Original deployment state reader, input assembler, fixed initial heading alignment, cached MotionPlayer future lookup with endpoint clamping, original unified ONNX graph and native PD/history processing. Shared canonical robot, shuffled SDK joints and near-vertical poses. Dataset retargeting and author simulator dynamics are outside this audit."
+}
