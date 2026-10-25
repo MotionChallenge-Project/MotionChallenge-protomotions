@@ -22,6 +22,8 @@
   "state_access": "ideal-proprioceptive-no-position-v1",
   "observation_contract": {
     "admission_record": "admission.json",
-    "admission_sha256": "8119ff438ea4735876d7b8c0afba4930db24ad0d9001f21c769965830090e0f0"
-  }
+    "admission_sha256": "941e23aa33216fe9cd345d94e88f5c1d701f90a38d8ece8378db5b7790b02abc"
+  },
+  "batch_entrypoint": "parallel:create",
+  "inference_workers": 4
 }

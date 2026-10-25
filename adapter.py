@@ -1,6 +1,6 @@
 """Official ProtoMotions unified-pipeline ONNX integration, G1 BONES deploy."""
+from motion_challenge.adapters.onnx import cpu_session
 import numpy as np
-import onnxruntime as ort
 from scipy.spatial.transform import Rotation
 import yaml
 
@@ -16,8 +16,7 @@ class ProtoMotions:
             raise ValueError('ProtoMotions checkpoint hash mismatch')
         if sha256_file(root/'policy.yaml')!=config['inference_config_sha256']:
             raise ValueError('ProtoMotions config hash mismatch')
-        options=ort.SessionOptions();options.intra_op_num_threads=1;options.inter_op_num_threads=1
-        self.session=ort.InferenceSession(str(weights),sess_options=options,providers=['CPUExecutionProvider'])
+        self.session=cpu_session(weights,config['weights_sha256'])
         if self.cfg['control']['pd_target_max_accel'] is not None or self.cfg['control']['action_ema_alpha']!=1.0:
             raise ValueError('this checkpoint adapter requires explicit unfiltered deployment configuration')
         self.last=np.zeros((1,1,29),dtype=np.float32)
