@@ -1,0 +1,34 @@
+{
+  "result_sha256": "48260c69b17b8217c7fcfb737de2a3d014425ac323aecaa52fa2ee78f05746c1",
+  "protocol_sha256": "940b7b6e059959c17f8ad092ccc7538d217a02f368fc9c00ad7c15f2b07713a9",
+  "runtime_sha256": "a91f337be6220abaa2b28f2b92752ee488fa2e71fb363a61ccce8c90deff1e18",
+  "summary": {
+    "success_count": 10,
+    "completion": 0.48492189830102816,
+    "full": {
+      "mpjpe_world_m": 4.041800385376798,
+      "mpjpe_xy_aligned_m": 0.35213650532866414,
+      "mpjpe_xy_yaw_aligned_m": 0.33128726231211564,
+      "joint_mae_rad": 0.35392160986916854,
+      "anchor_height_error_m": 0.2800106627728898,
+      "anchor_gravity_z_error": 0.5179414371214616
+    },
+    "prefix": {
+      "mpjpe_world_m": 2.3654748464469235,
+      "mpjpe_xy_aligned_m": 0.06801760600817097,
+      "mpjpe_xy_yaw_aligned_m": 0.06277989888962243,
+      "joint_mae_rad": 0.1737774199899667,
+      "anchor_height_error_m": 0.024907874523787777,
+      "anchor_gravity_z_error": 0.024880295825129833
+    }
+  },
+  "verification": {
+    "verification": "independent_cpu_trace_recomputation_passed",
+    "clips": 40,
+    "verifier_sha256": "822098272459bd44d65eb365cb0df9a5f3492410f63ab11cf055669b3a52237a",
+    "max_metric_abs_error": 1.897857676569359e-08,
+    "result_sha256": "48260c69b17b8217c7fcfb737de2a3d014425ac323aecaa52fa2ee78f05746c1",
+    "scope": "Trace consistency only; a separate clean rerun is still required"
+  },
+  "workflow": "Independent empty cache; evaluate.py with local original checkpoint and original LAFAN data; automatic conversion and trace verification"
+}

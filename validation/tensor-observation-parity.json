@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "steps": 24,
+  "batch": 7,
+  "joint_order": "reversed canonical names",
+  "partial_reset_step": 11,
+  "partial_reset_slots": [
+    1,
+    4
+  ],
+  "observation_max_abs_error": 0.0,
+  "pd_command_max_abs_error": 3.5762786865234375e-06,
+  "forbidden_actual_position_linear_velocity_counterfactual": "passed",
+  "checkpoint_sha256": "a59baa3e04a951e5cf0b4cc68f24ebaafa9272714226618b99a5017dfc805b4c",
+  "graph_sha256": "37b469d86daf162a6f249377fc492c0d723a247aef65bcf283d3225e4700e699",
+  "adapter_source_sha256": {
+    "tensor_adapter.py": "c2cf72dc4fb3e0b5d9d07265e381495d8d1a5024e8f67248af1007b27758e45b"
+  },
+  "reference": "Original adapter and ONNX; independent CPU MuJoCo body rotations; matched final target history",
+  "kinematics_sha256": "3d26c34c75102320e2f58325ffe5cdf1f242ebc9e3b9390c2770f2c532f3ef07"
+}

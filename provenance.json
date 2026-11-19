@@ -20,5 +20,13 @@
     "sha256": "a59baa3e04a951e5cf0b4cc68f24ebaafa9272714226618b99a5017dfc805b4c"
   },
   "inference_validation": "validation/native-parity.json",
-  "parity_scope": "Pinned author deployment functions and original weights on CPU ONNX Runtime, shared canonical robot, shuffled SDK joints and endpoint clamping. Dataset retargeting and author simulator dynamics are outside this audit. Production inference is unchanged from evaluated commit 1389b7e; only validation metadata was updated."
+  "parity_scope": "Pinned author deployment functions and original author ONNX, independent ONNX Runtime, shuffled joint orders, endpoint clamping, history/reset and 4096-slot batched inference. Dataset retargeting and author training-simulator dynamics are outside this inference audit.",
+  "batch_inference_validation": {
+    "original_checkpoint_origin": "validation/checkpoint-origin.json",
+    "conversion": "validation/mjwarp-network-parity.json",
+    "full_batch_network": "validation/full-batch-parity.json",
+    "full_batch_adapter": "validation/full-batch-adapter.json",
+    "observation_history_reset": "validation/tensor-observation-parity.json",
+    "independent_onnxruntime": "validation/onnxruntime-parity.json"
+  }
 }

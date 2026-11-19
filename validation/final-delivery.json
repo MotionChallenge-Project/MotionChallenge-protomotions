@@ -1,0 +1,16 @@
+{
+  "model": "protomotions",
+  "status": "passed",
+  "errors": [],
+  "core_commit": "2221fab60a90adc3c85b1dfd438e00244fb58263",
+  "runtime_sha256": "13eb6c4e71f19373a8914361825c427316adef97d74b589593a32d791cd15d82",
+  "locked_environment_and_cli": true,
+  "own_core_import": "/mnt/volumes/nexus-train-bd-ga/swd/motionchallenge-mjwarp/MotionChallenge-protomotions/MotionChallenge-Core/src/motion_challenge/__init__.py",
+  "admission_and_source_hashes": true,
+  "modules": [
+    "convert_weights",
+    "evaluate",
+    "tensor_adapter",
+    "torch_graph"
+  ]
+}

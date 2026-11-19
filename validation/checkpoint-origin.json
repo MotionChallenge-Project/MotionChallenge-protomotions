@@ -1,0 +1,23 @@
+{
+  "status": "author_release_verified",
+  "model": "protomotions",
+  "author_release_url": "https://github.com/NVlabs/ProtoMotions/blob/f69fdcaabff31846b4d2247207417b57dc788828/data/pretrained_models/motion_tracker/g1-bones-deploy/compiled_models/unified_pipeline.onnx",
+  "artifact_url": "https://media.githubusercontent.com/media/NVlabs/ProtoMotions/f69fdcaabff31846b4d2247207417b57dc788828/data/pretrained_models/motion_tracker/g1-bones-deploy/compiled_models/unified_pipeline.onnx",
+  "sha256": "a59baa3e04a951e5cf0b4cc68f24ebaafa9272714226618b99a5017dfc805b4c",
+  "source_commit": "f69fdcaabff31846b4d2247207417b57dc788828",
+  "artifact_bytes": 22606590,
+  "verified_at": "2026-11-19T05:06:36.996169+00:00",
+  "verification_scope": "Official author release link chain and complete artifact download SHA256. The downloaded bytes exactly match the original checkpoint used in the recorded evaluations. Conversion and controller parity are separately recorded; this record does not assert rollout success.",
+  "download_verification": {
+    "method": "fresh_complete_https_download_on_mac",
+    "sha256_matches_evaluated_original": true
+  },
+  "release_evidence": [
+    {
+      "url": "https://github.com/NVlabs/ProtoMotions/blob/f69fdcaabff31846b4d2247207417b57dc788828/data/pretrained_models/motion_tracker/g1-bones-deploy/compiled_models/unified_pipeline.onnx",
+      "kind": "artifact_in_pinned_author_repository"
+    }
+  ],
+  "conversion_evidence": "mjwarp-network-parity.json",
+  "independent_onnxruntime_evidence": "onnxruntime-parity.json"
+}

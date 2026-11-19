@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "batch": 7,
+  "original_onnx_calls": 7,
+  "device": "cuda:1",
+  "oracle": {
+    "onnxruntime": "1.30.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ]
+  },
+  "max_abs_error": {
+    "joint_pos_targets": 2.384185791015625e-06,
+    "stiffness_targets": 0.0,
+    "damping_targets": 0.0
+  },
+  "source_sha256": "a59baa3e04a951e5cf0b4cc68f24ebaafa9272714226618b99a5017dfc805b4c",
+  "graph_sha256": "37b469d86daf162a6f249377fc492c0d723a247aef65bcf283d3225e4700e699",
+  "weights_sha256": "c1992f8903f3184342b476cae7b2b06bc45d4939784b7b03fade7cbe53d2f727"
+}

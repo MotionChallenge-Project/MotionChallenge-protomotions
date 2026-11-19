@@ -1,0 +1,34 @@
+{
+  "id": "protomotions-g1-v1",
+  "control_period_s": 0.02,
+  "reference_offsets_s": [
+    0.02,
+    0.04,
+    0.08,
+    0.16
+  ],
+  "reference_history_s": 0.0,
+  "reference_preview_s": 0.16,
+  "weights": "checkpoints/policy.onnx",
+  "weights_sha256": "a59baa3e04a951e5cf0b4cc68f24ebaafa9272714226618b99a5017dfc805b4c",
+  "inference_config_sha256": "9b7896f3355a9d9d5e7d3139b83924eeb2e45c62c30bfda44afe996cfc6cf01c",
+  "source_commit": "f69fdcaabff31846b4d2247207417b57dc788828",
+  "official": false,
+  "action_history_semantics": "previous final joint position targets, matching official deployment/test_tracker_mujoco.py",
+  "source_repository": "https://github.com/NVlabs/ProtoMotions",
+  "weights_url": "https://media.githubusercontent.com/media/NVlabs/ProtoMotions/f69fdcaabff31846b4d2247207417b57dc788828/data/pretrained_models/motion_tracker/g1-bones-deploy/compiled_models/unified_pipeline.onnx",
+  "inference_config": "policy.yaml",
+  "state_access": "proprioceptive-no-position-no-linear-velocity-v1",
+  "observation_contract": {
+    "admission_record": "admission.mjwarp.json",
+    "admission_sha256": "d7cfc60f2b33fd219f1a5fba7e2806ef0e608f618375419e78b2de0e016812fe"
+  },
+  "migration_status": "inference_verified",
+  "tensor_entrypoint": "tensor_adapter:TensorProtoMotions",
+  "tensor_conversion": "convert_weights:prepare",
+  "tensor_outputs": [
+    "joint_pos_targets",
+    "stiffness_targets",
+    "damping_targets"
+  ]
+}
